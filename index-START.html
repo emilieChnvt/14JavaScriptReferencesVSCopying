@@ -10,7 +10,7 @@
   <script>
     // start with strings, numbers and booleans
   let age =200;
-  l
+
 
     // Let's say we have an array
     const players = ['Wes', 'Sarah', 'Ryan', 'Poppy'];
@@ -36,7 +36,12 @@
     const team3 = [].concat(players)
 
     // or use the new ES6 Spread
-    const team4 = [...players]
+    const team4 = [...players];
+    team4[4] = 'cdbs';
+    console.log(team4)
+
+    const team5 = Array.from(players)
+    console.log(team5)
 
     // now when we update it, the original one isn't changed
 
