@@ -9,7 +9,8 @@
 
   <script>
     // start with strings, numbers and booleans
-
+  let age =200;
+  l
 
     // Let's say we have an array
     const players = ['Wes', 'Sarah', 'Ryan', 'Poppy'];
@@ -29,10 +30,13 @@
     // So, how do we fix this? We take a copy instead!
 
     // one way
+    const team2 = players.slice()
 
     // or create a new array and concat the old one in
+    const team3 = [].concat(players)
 
     // or use the new ES6 Spread
+    const team4 = [...players]
 
     // now when we update it, the original one isn't changed
 
